@@ -6,7 +6,6 @@
 - [jQuery](http://code.jquery.com/jquery-2.1.4.min.js)
 - [Backbone.js](http://backbonejs.org/backbone-min.js)
 - [Underscore.js](http://underscorejs.org/underscore-min.js)
-- [Backbone.localStorage.js](https://github.com/jeromegn/Backbone.localStorage)
 - [Bootstrap](http://getbootstrap.com/)
 
 #### To run this project quickly on your own machine, all you need is:

@@ -25,8 +25,7 @@
 
 		// COLLECTION
 		var Directory = Backbone.Collection.extend({
-			model: Thing,
-			localStorage: new Store("store-avtobazar")
+			model: Thing
 		})
 
 		// VIEWS
@@ -60,7 +59,6 @@
 			
 			initialize: function() {
 				this.collection = new Directory(things);
-				this.collection.fetch();
 				this.render();
             	this.collection.on("add", this.renderThing, this);
             	this.collection.on("remove", this.removeThing, this);
@@ -115,7 +113,6 @@
 				newThing = new Thing(newModel)
 
 				this.collection.add(newThing);
-				newThing.save();
 			},
 
 			removeThing: function (removedModel) {
