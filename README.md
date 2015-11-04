@@ -28,6 +28,5 @@ And then you can open this project localy by simple oppening index.html file in 
 ### Unit tests
 #### Dependencies
 - [QUnit](http://qunitjs.com/)
-- [Sinon.js](http://sinonjs.org/)
 
 You can see all of unit tests in test.html. 
