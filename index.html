@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>listOfThings -- Backbone</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" href="./css/style.min.css">
+</head>
+<body>
+	<section id="listOfThing">
+		<div class="container">
+			<h1>List Of Things on Backbone</h1>
+			<button type="button" class="btn btn-success pull-right" data-toggle="modal" data-target="#myModal">I want to add!</button>
+			<div class="clearfix"></div><br>
+			<div class="row row--header">
+				<div class="col-xs-2">id</div>
+				<div class="col-xs-2">key</div>
+				<div class="col-xs-2">make</div>
+				<div class="col-xs-2">model</div>
+				<div class="col-xs-2">region</div>
+				<div class="col-xs-2">price</div>
+			</div>
+			<div id="things">
+				<div id="myModal" class="modal fade" role="dialog">
+				  <div class="modal-dialog">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <button type="button" class="close" data-dismiss="modal">&times;</button>
+				        <h4 class="modal-title">Adding An Items</h4>
+				      </div>
+				      <div class="modal-body">
+						<form id="AddingThing" action="" role="form">
+							<div class="form-group">
+								<label for="make">Make:</label>
+								<input id="make" type="text" class="form-control">
+							</div>
+							<div class="form-group">
+								<label for="model">Model:</label>
+								<input id="model" type="text" class="form-control">
+							</div>
+							<div class="form-group">
+								<label for="region">Region:</label>
+								<input id="region" type="text" class="form-control">
+							</div>
+							<div class="form-group">
+								<label for="price">Price:</label>
+								<input id="price" type="text" class="form-control">
+							</div>
+							<button id="add" class="btn btn-success" data-dismiss="modal">Add</button>
+							<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+						</form>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+	
+	<!-- Template -->
+	<script id="thingTemplate" type="text/template">
+		<div class="col-xs-2"><%= id %></div>
+		<div class="col-xs-2"><%= key %></div>
+		<div class="col-xs-2"><%= make %></div>
+		<div class="col-xs-2"><%= model %></div>
+		<div class="col-xs-2"><%= region %></div>
+		<div class="col-xs-2"><%= price %></div>
+		<a href="#" class="btn btn-danger delete">X</a>
+	</script>
+
+	<!-- libs -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/underscore-min.js"></script>
+	<script src="js/backbone-min.js"></script>
+	<script src="js/backbone.localStorage-min.js"></script>
+
+	<!-- scripts -->
+	<script src="js/app.min.js"></script>
+</body>
+</html>

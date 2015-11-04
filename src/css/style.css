@@ -1,0 +1,25 @@
+.row{
+	border-bottom: 1px solid #e7e7e7;
+}
+.row div{
+	padding: 15px;
+	border-left: 1px solid #f5f5f5;
+	border-right: 1px solid #f5f5f5;
+	position: relative;
+}
+.row--header div{
+	text-align: center;
+	background: #e7e7e7;
+	border: none;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+a.delete {
+    position: absolute;
+    margin: 8px;
+    opacity: 0.2
+}
+a.delete:hover{
+	opacity: 0.7;
+	text-decoration: none;
+}

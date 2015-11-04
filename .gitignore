@@ -1,0 +1,8 @@
+*.sublime*
+node_modules/
+*.log
+qunit/*.css
+qunit/qunit.js
+qunit/sinon.js
+/js/
+/css/
