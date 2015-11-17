@@ -7,6 +7,7 @@
 - [Backbone.js](http://backbonejs.org/backbone-min.js)
 - [Underscore.js](http://underscorejs.org/underscore-min.js)
 - [Bootstrap](http://getbootstrap.com/)
+- [Backbone.localStorage](https://github.com/jeromegn/Backbone.localStorage)
 
 #### To run this project quickly on your own machine, all you need is:
 - clone this repository

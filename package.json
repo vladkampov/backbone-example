@@ -1,8 +1,13 @@
 {
   "author": "Vlad Kampov",
   "name": "backbone-example",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/vladkampov/backbone-example.git"
+  },
   "devDependencies": {
     "backbone": "^1.2.3",
+    "backbone.localstorage":">=1.1.16",
     "bootstrap": "^3.3.5",
     "grunt": ">= 0.4",
     "grunt-cli": ">= 0.1.6",

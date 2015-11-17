@@ -10,7 +10,7 @@
 				price: "$500 000"
 			}
 		]
-
+		
 		// MODEL
 		var Thing = Backbone.Model.extend({
 			defaults: {
@@ -25,9 +25,10 @@
 
 		// COLLECTION
 		var Directory = Backbone.Collection.extend({
-			model: Thing
+			model: Thing,
+			localStorage: new Store("store-avtobazar")
 		})
-
+		
 		// VIEWS
 		var ThingView = Backbone.View.extend({
 			tagName: "div",
@@ -59,6 +60,7 @@
 			
 			initialize: function() {
 				this.collection = new Directory(things);
+				this.collection.fetch();
 				this.render();
             	this.collection.on("add", this.renderThing, this);
             	this.collection.on("remove", this.removeThing, this);
@@ -113,6 +115,7 @@
 				newThing = new Thing(newModel)
 
 				this.collection.add(newThing);
+				newThing.save();
 			},
 
 			removeThing: function (removedModel) {
