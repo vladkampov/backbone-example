@@ -1,6 +1,6 @@
 ## My own Backbone example
 
-#### [LIVE DEMO ➫](http://vladkampov.github.io/backbone/)
+#### [LIVE DEMO ➫](http://vladkampov.github.io/examples/backbone/)
 
 ### Dependencies
 - [jQuery](http://code.jquery.com/jquery-2.1.4.min.js)
